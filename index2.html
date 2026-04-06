@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colour Personality Quiz</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <h1>Colour Personality Quiz</h1>
+      <p>
+        Made by Ksenia Shkarina as a part of Project 3
+      </p>
+    </section>
+    <div class="layout">
+      <section class="quiz-panel">
+        <h2 class="section-title">Questions</h2>
+        <form id="quizForm">
+          <div class="question">
+            <h3>1. When you are stressed, what do you need most?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q1" value="pink"><span>You need to be comforted</span></label>
+              <label class="option"><input type="radio" name="q1" value="red"><span>You need to take control over the situation</span></label>
+              <label class="option"><input type="radio" name="q1" value="green"><span>You need to be left alone</span></label>
+              <label class="option"><input type="radio" name="q1" value="blue"><span>You need to make a plan and calculate all possible outcomes</span></label>
+              <label class="option"><input type="radio" name="q1" value="purple"><span>You need to get distracted</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>2. What hurts you the most?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q2" value="pink"><span>Rejection</span></label>
+              <label class="option"><input type="radio" name="q2" value="red"><span>Disrespect</span></label>
+              <label class="option"><input type="radio" name="q2" value="green"><span>Conflict</span></label>
+              <label class="option"><input type="radio" name="q2" value="blue"><span>Failure</span></label>
+              <label class="option"><input type="radio" name="q2" value="purple"><span>Being misunderstood</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>3. What is usually your place in a group?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q3" value="pink"><span>Caretaker</span></label>
+              <label class="option"><input type="radio" name="q3" value="red"><span>Leader</span></label>
+              <label class="option"><input type="radio" name="q3" value="green"><span>Mediator</span></label>
+              <label class="option"><input type="radio" name="q3" value="blue"><span>Organizer</span></label>
+              <label class="option"><input type="radio" name="q3" value="purple"><span>A bit of everything, depending on the situation</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>4. What is your hidden weakness?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q4"value="pink"><span>People pleasing</span></label>
+              <label class="option"><input type="radio" name="q4"value="red"><span>Impulsivity</span></label>
+              <label class="option"><input type="radio" name="q4"value="green"><span>Procrastination</span></label>
+              <label class="option"><input type="radio" name="q4"value="blue"><span>Self-criticism</span></label>
+              <label class="option"><input type="radio" name="q4"value="purple"><span>I have no weaknesses, I’m perfect</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>5. What is your main goal for the future?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q5" value="pink"><span>Create a stable and calm life, surrounded by loved ones</span></label>
+              <label class="option"><input type="radio" name="q5" value="red"><span>Grow in your workplace and achieve high positions</span></label>
+              <label class="option"><input type="radio" name="q5" value="green"><span>Find your inner peace and heal previous trauma</span></label>
+              <label class="option"><input type="radio" name="q5" value="blue"><span>Learn and gain knowledge</span></label>
+              <label class="option"><input type="radio" name="q5" value="purple"><span>Create art that will inspire people</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>6. What fear feel strongest to you?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q6" value="pink"><span>Feeling unloved</span></label>
+              <label class="option"><input type="radio" name="q6" value="red"><span>Feeling powerless</span></label>
+              <label class="option"><input type="radio" name="q6" value="green"><span>Losing stability</span></label>
+              <label class="option"><input type="radio" name="q6" value="blue"><span>Losing control</span></label>
+              <label class="option"><input type="radio" name="q6" value="purple"><span>Losing yourself</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <h3>7. What matters most in a relationship?</h3>
+            <div class="options">
+              <label class="option"><input type="radio" name="q7" value="pink"><span>Emotional closeness</span></label>
+              <label class="option"><input type="radio" name="q7" value="red"><span>Passion</span></label>
+              <label class="option"><input type="radio" name="q7" value="green"><span>I don’t think that a romantic relationship is for me</span></label>
+              <label class="option"><input type="radio" name="q7" value="blue"><span>Reliability and trust</span></label>
+              <label class="option"><input type="radio" name="q7" value="purple"><span>Deep understanding and acceptance of one another</span></label>
+            </div>
+          </div>
+          <div class="actions">
+            <button type="button" class="primary" onclick="showResult()">See My Result</button>
+            <button type="reset" class="secondary" onclick="resetQuiz()">Reset</button>
+          </div>
+        </form>
+      </section>
+      <aside class="side-panel">
+        <h2 class="section-title">Your Result</h2>
+        <div class="mini-card">
+          <h4> Result</h4>
+          <div id="result" class="result">Choose one answer for each question and click "See My Result."</div>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>
